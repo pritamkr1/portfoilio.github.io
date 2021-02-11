@@ -159,14 +159,39 @@ footer a{
 }
 .pagination .active{
     background-color: #4e3d53;
-    color: #fff;
+}
+.pagination p:hover{
+    background-color: #4e3d531a;
 }
 .pagination p{
     display: inline-block;
     padding: 8px 16px;
     border: 1px solid #4e3d531a;
     border-radius: 2px;
+    transition: 0.3s;
 }
 .pagination p a{
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        background-color: #4e3d53;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .contact-section ul li i{
+        margin: 10px 0;
+        font-size: small;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 100px;
+        border: 1px solid rgba(0, 0, 0, 0.075);
+        transition: 0.3s;
+        background-color: #4e3d53;
+        color: #fff;
+    }
 }
